@@ -1,5 +1,8 @@
 .box-thing {
     margin: 5px;
-    background: gray;
     height: 100px;
 }
+
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
