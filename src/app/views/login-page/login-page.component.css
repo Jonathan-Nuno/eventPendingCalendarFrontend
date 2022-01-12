@@ -1,5 +1,87 @@
-.box-thing {
-    margin: 5px;
-    background: gray;
-    height: 100px;
+.main-page {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(154 159 253);
+  display: grid;
+  grid-template-areas:
+    ". . ."
+    ". container ."
+    ". . .";
+  place-items: center;
+}
+.main-container {
+  display: grid;
+  grid-area: container;
+  place-items: center;
+  grid-template-areas:
+    "header"
+    "sub-header"
+    "login-modal";
+  grid-template-rows: 15% 10% 75%;
+  grid-template-columns: minmax(335px, 55%) auto;
+  height: 500px;
+  background-color: rgb(233 233 233 / 90%);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.header {
+  display: grid;
+  grid-area: header;
+  height: 100%;
+  align-items: end;
+  margin: 0px;
+}
+
+.sub-header {
+  display: grid;
+  grid-area: sub-header;
+  margin: 0px;
+}
+
+.login-modal {
+  display: grid;
+  grid-area: login-modal;
+  grid-template-areas:
+    "email"
+    "password"
+    "login"
+    "divider"
+    "sign-up";
+  grid-template-rows: 1.75fr 1.5fr 1.5fr 0fr 1.5fr;
+  height: 100%;
+}
+
+.mat-form-field {
+  display: grid;
+  place-self: center stretch;
+}
+
+.email-field {
+  grid-area: email;
+}
+
+.password-field {
+  grid-area: password;
+}
+
+.mat-raised-button {
+  display: grid;
+  place-self: center stretch;
+}
+
+.login {
+  grid-area: login;
+}
+
+.mat-divider {
+  display: grid;
+  place-self: center stretch;
+  grid-area: divider;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.sign-up {
+  grid-area: sign-up;
 }
