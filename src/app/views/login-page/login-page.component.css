@@ -19,10 +19,11 @@
     "login-modal";
   grid-template-rows: 15% 10% 75%;
   grid-template-columns: minmax(335px, 55%) auto;
-  height: 500px;
+  height: 400px;
   background-color: rgb(233 233 233 / 90%);
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 8px 8px 9px 1px rgb(0 0 0 / 30%), 0px 0px 3px 0px rgb(0 0 0 / 46%);
 }
 
 .header {
@@ -48,8 +49,8 @@
     "login"
     "divider"
     "sign-up";
-  grid-template-rows: 1.75fr 1.5fr 1.5fr 0fr 1.5fr;
-  height: 100%;
+  grid-template-rows: 1.5fr 1.3fr 1fr 1fr 1fr;
+  height: 90%;
 }
 
 .mat-form-field {
